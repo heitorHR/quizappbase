@@ -19,7 +19,19 @@
     --bg-javascript:#ebf0ff;
     --bg-acessibilidade:#f6e7ff;
     --bg-mobile:url(./assets/images/pattern-background-mobile-light.svg);
-    --bg-desktop:url(./assets/images/pattern-background-desktop-light.svg)
+    --bg-desktop:url(./assets/images/pattern-background-desktop-light.svg);
+}
+body.escuro {
+    --bg-color:#313e51;
+    --bg-mobile:url(./assets/images/pattern-background-dark-light.svg);
+    --bg-desktop:url(./assets/images/pattern-background-desktop-dark.svg);
+    --primary-text-color:#fff;
+    --secondary-text-color:#abc1e1;
+    --button-bg:#3b4d66;
+    --shadow: 0px 16px 40px 0px rgba(49,62 , 81,  0.14);
+
+
+    
 }
 
 body{
@@ -66,29 +78,34 @@ main{
     padding: 32px 24px;
 
 }
+main h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
 
-.boas_vindas{
+.boas_vindas {
     margin-bottom: 40px;
 }
-.boas_vindas h1{
+.boas_vindas h1 {
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 16px;
 
 }
 
-.boas_vindas h1 strong{
+.boas_vindas h1 strong {
     font-weight: 500;
 
 }
-.boas_vindas p{
+.boas_vindas p { 
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 150%;
     font-style: italic;
 
 }
-.assuntos{
+.assuntos {
     display: flex;
     flex-direction: column;
     gap: 12px;
