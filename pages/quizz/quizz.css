@@ -16,6 +16,8 @@
     --bg-css:#e0fdef;
     --bg-javascript:#ebf0ff;
     --bg-acessibilidade:#f6e7ff;
+    --green:#26d782;
+    --red:#ee4545;
     --bg-mobile:url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop:url(../../assets/images/pattern-background-desktop-light.svg);
 }
@@ -144,11 +146,16 @@ main{
     border-radius: 12px;
     box-shadow: var(--shadow);
     color: var(--primary-text-color);
-    
+
 
 }
-.alternativas label:has(input:checked){
-    
+.alternativas label:has(input:checked) {
+    outline: 3px  solid var(--purple);
+
+    & span {
+        background: var(--purple);
+        color: var(--white);
+    }
 }
 
 .alternativas input{
@@ -174,7 +181,7 @@ main{
     justify-content: center;
     flex-shrink: 0;
 
-    
+
 }
 .alternativas button{
     padding: 16px;
